@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products</title>
+    <link rel="icon" href="assets/images/favicon.webp" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a class="navbar__logo" href="#">
+        Swedish App Mafia
+      </a>
+      <nav>
+        <ul class="navbar__links">
+          <li><a class="navbar__link" href="index.html">Home</a></li>
+          <li>
+            <a class="navbar__link active" href="#">Products</a>
+          </li>
+          <li><a class="navbar__link" href="about.html">About</a></li>
+          <li><a class="navbar__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        class="hamburger hamburger--slider-r"
+        id="hamburger"
+        type="button"
+        onclick="useNav()"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close" onclick="useNav()"></a>
+      <div class="overlay__content">
+        <a href="index.html">Home</a>
+        <a href="#" onclick="useNav()">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <section class="products-section">
+      <div class="products">
+        <div class="product product--first">
+          <img class="product__image" src="assets/images/bvl-icon.png" />
+          <div class="product__title">Ballet Video Lesson</div>
+          <div class="product__devices">
+            <img
+              class="product__device"
+              src="assets/images/apple-app-store.svg"
+            />
+            <img class="product__device" src="assets/images/google-play.svg" />
+          </div>
+          <div class="btn btn--dark">Read more</div>
+        </div>
+        <div class="product">
+          <img
+            class="product__image product__image--more-margin"
+            src="assets/images/btc-icon.png"
+          />
+          <div class="product__title">Ballet Video Lesson</div>
+          <div class="product__devices">
+            <img
+              class="product__device"
+              src="assets/images/apple-app-store.svg"
+            />
+          </div>
+          <div class="btn btn--dark">Read more</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-top">
+          <a class="footer__logo" href="#">SAM</a>
+          <div class="footer__container">
+            <div class="footer__links-title">Email</div>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a
+                  class="footer__link"
+                  href="mailto:company@swedishappmafia.com"
+                  >company@swedishappmafia.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container">
+            <div class="footer__links-title">Products</div>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a
+                  class="footer__link"
+                  href="https://apps.apple.com/us/app/ballet-video-lesson/id1232032083"
+                  >Ballet Video Lesson</a
+                >
+              </li>
+              <li class="footer__link-item">
+                <a
+                  class="footer__link"
+                  href="https://apps.apple.com/us/app/ballet-teacher-companion/id1125073813"
+                  >Ballet Teacher Companion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container">
+            <div class="footer__links-title">Links</div>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a class="footer__link" href="index.html">Home</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="about.html">About</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__copyright">
+            Copyright 2020 © Swedish App Mafia ab - All Rights Reserved
+          </div>
+          <div class="footer-bottom__socials">
+            <a href="https://www.instagram.com/balletteachercompanion/?hl=en">
+              <img
+                class="footer-bottom__social"
+                src="assets/images/instagram.svg"
+                alt="instagram"
+              />
+            </a>
+            <a href="https://www.facebook.com/balletteachercompanion/">
+              <img
+                class="footer-bottom__social"
+                src="assets/images/facebook.svg"
+                alt="facebook"
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/UCRtx8b6hGYYMoK-nT4PYsQw">
+              <img
+                class="footer-bottom__social"
+                src="assets/images/youtube.svg"
+                alt="youtube"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

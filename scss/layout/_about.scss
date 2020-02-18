@@ -1,0 +1,28 @@
+.about {
+    margin: 0 20%;
+    min-height: 100vh;
+    padding: 10rem 0;
+}
+
+.about__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
+
+.about__text {
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+}
+
+@media screen and (max-width: width(third-width)) {
+    .about__title {
+        text-align: center;
+    }
+
+    .about__text {
+        text-align: justify;
+        letter-spacing: .02rem;
+    }
+}

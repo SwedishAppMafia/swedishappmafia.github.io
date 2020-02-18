@@ -1,0 +1,135 @@
+.apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.app__background {
+    width: 100%;
+}
+
+.app__content {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+
+    .app__image {
+        height: 70vh;
+
+        @media screen and (max-width: width(second-width)) {
+            height: auto;
+            width: 30vw;
+        }
+
+        @media screen and (max-width: width(third-width)) {
+            height: auto;
+            width: 50vw;
+        }
+    }
+
+    @media screen and (max-width: width(second-width)) {
+        flex-direction: column;
+    }
+}
+
+.app__information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    width: 25vw;
+
+    .app__title {
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .app__subtitle {
+        margin: 1rem 0;
+        color: rgba(224, 224, 224, 0.9);
+        text-shadow: none;
+    }
+
+    .app__description {
+        font-size: 1.2rem;
+
+        @media screen and (max-width: width(fourth-width)) {
+            margin: 0 1rem;
+        }
+    }
+
+    .app__button {
+        @include btn;
+
+        margin-top: 1rem;
+    }
+
+    @media screen and (max-width: width(second-width)) {
+        width: 100%;
+        padding: 0 10%;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: width(fourth-width)) {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.app__background--bvl {
+    background-color: rgba(221, 144, 190, 1);
+
+    .app__button {
+        &:hover {
+            text-shadow: none;
+        }
+    }
+}
+
+.app__background--btc {
+    background-color: #e9dddd;
+
+    color: rgb(49, 43, 49);
+
+    .app__content {
+
+        @media screen and (max-width: width(second-width)) {
+            flex-direction: column-reverse;
+        }
+
+        .app__subtitle {
+            margin: 1rem 0;
+            color: color("text__btc-subtitle");
+            text-shadow: none;
+        }
+
+        .app__button {
+            border-color: color("text__btc");
+            color: color("text__btc");
+
+            .btn__image {
+                filter: invert(0);
+            }
+
+            &:hover {
+                background-color: color("text__btc");
+                color: white;
+                text-shadow: none;
+
+                .btn__image {
+                    filter: invert(100);
+                }
+            }
+        }
+    }
+}

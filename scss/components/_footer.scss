@@ -1,0 +1,145 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 0;
+    width: fit-content;
+}
+
+.footer-top {
+    display: inline-flex;
+}
+
+.footer__logo {
+    font-family: 'Orbitron';
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+    transition: all 0.1s ease;
+
+    &:hover {
+        color: rgb(175, 175, 175);
+    }
+}
+
+.footer__container {
+    margin: 0 1.5rem;
+}
+
+.footer__links-title {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer__links {
+    list-style: none;
+}
+
+.footer__link {
+    line-height: 1.5rem;
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+    transition: all 0.1s ease;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.footer-bottom {
+    border-top: solid 1px rgb(71, 71, 71);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.footer-bottom__copyright {
+    color: white;
+}
+
+.footer-bottom__social {
+    height: 1.8rem;
+    margin: 0 .3rem;
+}
+
+@media screen and (max-width: width(third-width)) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__links-title {
+        margin: .75rem 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-bottom__socials {
+        margin-top: 1rem;
+        display: inline-flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/*footer {
+    padding: 1.5rem 0;
+    background-color: color("theme__contrast");
+    color: color("text__title");
+    width: 100%;
+}
+
+.footer {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.footer_top-content {
+    display: flex;
+}
+
+.footer__logo {
+    font-size: 5rem;
+    font-family: 'Orbitron';
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: rgb(168, 168, 168);
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.container__links {
+    list-style: none;
+
+    li a {
+        color: rgb(163, 163, 163);
+        text-decoration: none;
+        transition: all 0.1s linear;
+
+        &:hover {
+            color: white;
+        }
+    }
+}*/

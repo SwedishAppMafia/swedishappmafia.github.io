@@ -57,23 +57,24 @@ textarea {
     resize: vertical;
     max-height: 40vh;
     color: black;
+
+    &:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    &:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    &:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    &:focus:-ms-input-placeholder {
+        color: transparent;
+    }
 }
 
-input:focus::-webkit-input-placeholder {
-    color: transparent;
-}
-
-input:focus:-moz-placeholder {
-    color: transparent;
-}
-
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-
-input:focus:-ms-input-placeholder {
-    color: transparent;
-}
 
 @media screen and (max-width: width(second-width)) {
     .contact__form {

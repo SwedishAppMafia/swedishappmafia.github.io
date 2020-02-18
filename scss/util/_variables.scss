@@ -28,9 +28,9 @@ $colors: ("variables": #fff,
 }
 
 $breakpoints: (first-width: 1300px,
-    second-width: 1050px,
+    second-width: 1150px,
     third-width: 800px,
-    fourth-width: 600px,
+    fourth-width: 630px,
 );
 
 @function width($width-name) {

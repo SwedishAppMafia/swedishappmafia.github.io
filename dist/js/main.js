@@ -45,9 +45,9 @@ var navbarLinksSize = "1.5rem";
 var navbarColor = "#181818";
 
 var firstWidth = 1300;
-var secondWidth = 1050;
+var secondWidth = 1150;
 var thirdWidth = 800;
-var fourthWidth = 600;
+var fourthWidth = 630;
 
 var width = document.body.clientWidth;
 

@@ -53,7 +53,6 @@ var width = document.body.clientWidth;
 
 function setVariables() {
   if (width > firstWidth) {
-    console.log(width);
     logoTextSize = "2.5rem";
     logoTextSizeNormal = "2.2rem";
   }
@@ -83,13 +82,3 @@ function scrollFunction() {
     }
   }
 }
-
-/*
-
-navbar__logo  fourth-width {
-  font-size: 5vw;
-}
-
-
-
-*/

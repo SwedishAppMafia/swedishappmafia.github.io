@@ -53,10 +53,10 @@ textarea {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
     margin: .8rem 0;
     resize: vertical;
     max-height: 40vh;
+    color: black;
 }
 
 @media screen and (max-width: width(second-width)) {

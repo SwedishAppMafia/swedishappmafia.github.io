@@ -8,40 +8,43 @@
     background-image: url("../assets/images/norrsken.webp");
     background-size: cover;
     background-attachment: fixed;
+}
 
+.hero__text {
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero__title {
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 2.2rem;
+
+    &::selection {
+        color: black;
+        background-color: white;
+    }
+}
+
+.hero__subtitle {
+    color: color("hero__sub-title");
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    display: flex;
+
+    &::selection {
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: width(first-width)) {
     .hero__text {
-        margin: auto;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
         padding: 0 10%;
-
-        h1 {
-            color: white;
-            font-family: 'Orbitron';
-            font-size: 2.2rem;
-            margin: 0;
-        }
-
-        h2 {
-            color: color("hero__sub-title");
-            font-size: 1.5rem;
-            margin: 1.5rem 0;
-            display: flex;
-        }
-
-        h1::selection,
-        h2::selection {
-            color: black;
-            background-color: white;
-        }
-
-        .hero-button {
-            @include btn;
-            margin: 0;
-        }
     }
 }
 

@@ -23,6 +23,10 @@ window.onscroll = function() {
   update();
 };
 
+window.onclick;
+
+window.onMouse;
+
 window.onload = function() {
   update();
 };
@@ -45,14 +49,15 @@ var navbarLinksSize = "1.5rem";
 var navbarColor = "#181818";
 
 var firstWidth = 1300;
-var secondWidth = 1150;
+var secondWidth = 1050;
 var thirdWidth = 800;
-var fourthWidth = 630;
+var fourthWidth = 600;
 
 var width = document.body.clientWidth;
 
 function setVariables() {
   if (width > firstWidth) {
+    console.log(width);
     logoTextSize = "2.5rem";
     logoTextSizeNormal = "2.2rem";
   }
@@ -65,20 +70,34 @@ function setVariables() {
 function scrollFunction() {
   let navbar = document.getElementsByClassName("navbar").item(0);
   let navbarLogo = document.getElementsByClassName("navbar__logo").item(0);
-  if (navbar.className.includes("hover") && navbar != null) {
+  if (navbar != null) {
     let navLinks = document.getElementsByClassName("navbar__link");
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
       Array.from(navLinks).forEach(function(element) {
         element.style.fontSize = navbarLinksSizeNormal;
       });
       navbarLogo.style.fontSize = logoTextSizeNormal;
-      navbar.style.backgroundColor = navbarColor;
+      if (navbar.className.includes("hover")) {
+        navbar.style.backgroundColor = navbarColor;
+      }
     } else {
       Array.from(navLinks).forEach(function(element) {
         element.style.fontSize = navbarLinksSize;
       });
       navbarLogo.style.fontSize = logoTextSize;
-      navbar.style.backgroundColor = navbarColorNormal;
+      if (navbar.className.includes("hover")) {
+        navbar.style.backgroundColor = navbarColorNormal;
+      }
     }
   }
 }
+
+/*
+
+navbar__logo  fourth-width {
+  font-size: 5vw;
+}
+
+
+
+*/

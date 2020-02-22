@@ -1,145 +1,141 @@
 .navbar {
-    z-index: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: color("theme__primary");
-    width: 100%;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    transition: 0.3s;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: color("theme__primary");
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .navbar--hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar__logo {
-    cursor: pointer;
-    color: white;
-    margin-right: auto;
-    font-size: 2.5rem;
-    transition-duration: 0.4s;
-    font-family: 'Orbitron';
-    text-decoration: none;
+  cursor: pointer;
+  color: white;
+  margin-right: auto;
+  font-size: 2.5rem;
+  transition-duration: 0.4s;
+  font-family: "Orbitron";
+  text-decoration: none;
 
-    &:hover {
-        color: color("navbar__logo-hover");
-        transform: translateY(-.1rem);
-    }
+  &:hover {
+    color: color("navbar__logo-hover");
+    transform: translateY(-0.1rem);
+  }
 
-    @media screen and (max-width: width(fourth-width)) {
-        font-size: 5vw;
-    }
+  @media screen and (max-width: width(fourth-width)) {
+    font-size: 5vw;
+  }
 }
 
-
 nav .navbar__links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 
-    .navbar__link {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: color("navbar__title-inactive");
-        text-decoration: none;
-        transition: all 0.3s ease 0s;
-        padding: 0px 20px;
-    }
+  .navbar__link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: color("navbar__title-inactive");
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding: 0px 20px;
+  }
 
-    @media only screen and (max-width: width(second-width)) {
-        display: none;
-    }
+  @media only screen and (max-width: width(second-width)) {
+    display: none;
+  }
 
-    .navbar__link:hover {
-        color: color("navbar__title-hover");
-    }
+  .navbar__link:hover {
+    color: color("navbar__title-hover");
+  }
 
-    .active {
-        color: color("navbar__title-active")
-    }
+  .active {
+    color: color("navbar__title-active");
+  }
 }
 
 #hamburger {
-    filter: invert(100);
-    display: none;
+  filter: invert(100);
+  display: none;
 
-    @media screen and (max-width: width(second-width)) {
-        display: inline;
-    }
+  @media screen and (max-width: width(second-width)) {
+    display: inline;
+  }
 }
-
-
 
 #mobile__menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: rgb(36, 36, 36);
+  top: 0;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+
+  a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    color: white;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    color: #0088a9;
+  }
+
+  .overlay__content {
+    display: flex;
     height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: black;
-    overflow: hidden;
-    transition: all 0.5s ease 0s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
 
     a {
-        padding: 15px;
-        font-size: 36px;
-        display: block;
-        transition: all 0.3s ease 0s;
-        color: white;
+      font-size: 22px;
+      font-weight: 500;
+      color: #edf0f1;
+      text-decoration: none;
     }
-
-    .close {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-        color: #edf0f1;
-        cursor: pointer;
-    }
-
-    &:hover,
-    &:focus {
-        color: #0088a9;
-    }
-
-    .overlay__content {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        a {
-            font-size: 22px;
-            font-weight: 500;
-            color: #edf0f1;
-            text-decoration: none;
-        }
-    }
+  }
 }
-
 
 @media screen and (max-width: width(first-width)) {
-    #navbar {
-        padding: 30px 5%;
-    }
+  #navbar {
+    padding: 30px 5%;
+  }
 }
 
-
 @media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px;
-    }
+  .overlay a {
+    font-size: 20px;
+  }
 
-    .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 /*

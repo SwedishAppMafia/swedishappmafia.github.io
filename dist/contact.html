@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact</title>
     <link rel="icon" href="assets/images/favicon.webp" />
+    <link rel="preload" href="css/main.css" as="style" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -16,11 +17,11 @@
       </a>
       <nav>
         <ul class="navbar__links">
-          <li><a class="navbar__link" href="home.html">Home</a></li>
+          <li><a class="navbar__link" href="/">Home</a></li>
           <li>
-            <a class="navbar__link" href="products.html">Products</a>
+            <a class="navbar__link" href="products">Products</a>
           </li>
-          <li><a class="navbar__link" href="about.html">About</a></li>
+          <li><a class="navbar__link" href="about">About</a></li>
           <li>
             <a class="navbar__link active" href="#">Contact</a>
           </li>
@@ -40,9 +41,9 @@
     <div id="mobile__menu" class="overlay">
       <a class="close" onclick="useNav()"></a>
       <div class="overlay__content">
-        <a href="home.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
+        <a href="/">Home</a>
+        <a href="products">Products</a>
+        <a href="about">About</a>
         <a href="#" onclick="useNav()">Contact</a>
       </div>
     </div>
@@ -56,21 +57,24 @@
               Do you have questions, want to give feedback or have an idea for
               an application, you can contact us with the form below.
             </div>
-            <input type="text" name="name" required placeholder="Name" autocomplete="off" />
-            <input type="email" name="mail" required placeholder="Email" autocomplete="off" />
-            <input type="text" name="subject" required placeholder="Subject" autocomplete="off" />
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="mail" placeholder="Email" />
+            <input type="text" name="subject" placeholder="Subject" />
             <textarea
               class="contact__text-area"
               name="message"
               placeholder="Message"
-              autocomplete="off"
             ></textarea>
             <div class="contact__submit">
               <div class="recaptcha__terms">
                 This form uses Google's reCAPTCHA v3. By continuing you agree to
                 the
-                <a href="https://policies.google.com/privacy">Privacy</a> and
-                <a href="https://policies.google.com/terms">Terms</a>.
+                <a href="https://policies.google.com/privacy"
+                rel="noopener noreferrer"
+                target="_blank">Privacy</a> and
+                <a href="https://policies.google.com/terms"
+                rel="noopener noreferrer"
+                target="_blank">Terms</a>.
               </div>
               <div
                 class="g-recaptcha captcha"
@@ -106,6 +110,8 @@
                 <a
                   class="footer__link"
                   href="https://apps.apple.com/us/app/ballet-video-lesson/id1232032083"
+                  rel="noopener noreferrer"
+                  target="_blank"
                   >Ballet Video Lesson</a
                 >
               </li>
@@ -113,6 +119,8 @@
                 <a
                   class="footer__link"
                   href="https://apps.apple.com/us/app/ballet-teacher-companion/id1125073813"
+                  rel="noopener noreferrer"
+                  target="_blank"
                   >Ballet Teacher Companion</a
                 >
               </li>
@@ -122,13 +130,13 @@
             <div class="footer__links-title">Links</div>
             <ul class="footer__links">
               <li class="footer__link-item">
-                <a class="footer__link" href="home.html">Home</a>
+                <a class="footer__link" href="/">Home</a>
               </li>
               <li class="footer__link-item">
-                <a class="footer__link" href="products.html">Products</a>
+                <a class="footer__link" href="products">Products</a>
               </li>
               <li class="footer__link-item">
-                <a class="footer__link" href="about.html">About</a>
+                <a class="footer__link" href="about">About</a>
               </li>
             </ul>
           </div>
@@ -138,21 +146,27 @@
             Copyright 2020 © Swedish App Mafia ab - All Rights Reserved
           </div>
           <div class="footer-bottom__socials">
-            <a href="https://www.instagram.com/balletteachercompanion/?hl=en">
+            <a href="https://www.instagram.com/balletteachercompanion/?hl=en"
+            rel="noopener noreferrer"
+            target="_blank">
               <img
                 class="footer-bottom__social"
                 src="assets/images/instagram.svg"
                 alt="instagram"
               />
             </a>
-            <a href="https://www.facebook.com/balletteachercompanion/">
+            <a href="https://www.facebook.com/balletteachercompanion/"
+            rel="noopener noreferrer"
+            target="_blank">
               <img
                 class="footer-bottom__social"
                 src="assets/images/facebook.svg"
                 alt="facebook"
               />
             </a>
-            <a href="https://www.youtube.com/channel/UCRtx8b6hGYYMoK-nT4PYsQw">
+            <a href="https://www.youtube.com/channel/UCRtx8b6hGYYMoK-nT4PYsQw"
+            rel="noopener noreferrer"
+            target="_blank">
               <img
                 class="footer-bottom__social"
                 src="assets/images/youtube.svg"

@@ -1,54 +1,54 @@
 * {
-    font-family: 'Nunito';
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    user-select: none;
+  font-family: "Nunito";
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
 }
 
 ::selection {
-    color: white;
-    background-color: black;
-    background-size: contain;
+  color: white;
+  background-color: black;
+  background-size: contain;
 }
 
 body {
-    background-color: #e9e9e9;
-    color: black;
-    width: 100%;
+  background-color: #e9e9e9;
+  color: black;
+  width: 100%;
 }
 
 img {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 
-    &.light {
-        color: color("text__title");
-    }
+  &.light {
+    color: color("text__title");
+  }
 }
 
 h2,
 h3,
 h4 {
-    &.light {
-        color: color("text__subtitle");
-    }
+  &.light {
+    color: color("text__subtitle");
+  }
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-    background-color: color("theme__primary");
+  background-color: color("theme__primary");
 
-    p {
-        color: white;
-    }
+  p {
+    color: white;
+  }
 }
